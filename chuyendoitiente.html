@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <table>
+    <tr>
+        <td>Amount</td>
+        <td>From Currency</td>
+        <td>To Currency</td>
+    </tr>
+    <tr>
+        <td><input id="amount" name="amount"></td>
+        <td><select id="from">
+            <option selected disabled>Chọn loại tiền</option>
+            <option value="vnđ">VNĐ</option>
+            <option value="usd">USD</option>
+        </select></td>
+        <td><select id="to">
+            <option selected disabled>Chọn loại tiền</option>
+            <option value="vnđ">VNĐ</option>
+            <option value="usd">USD</option>
+        </select></td>
+        <td><button type="button" onclick="calculate()">Convert</button></td>
+    </table>
+    <p>Result: <span id="convert"></span></p>
+</form>
+    <script src="cdtt.js">
+    </script>
+</body>
+</html>
